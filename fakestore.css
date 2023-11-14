@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: lightgray;
+    min-height: 100vh;
+    overflow-x: hidden; 
+}
+
+.products{
+    position: absolute;
+    padding: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: 10px 50px;
+    gap: 1rem; /* ürünler arasında 10 piksel boşluk bırak */
+}
+
+.product{
+    position: relative;
+    height: 31.25rem;
+    width: 20rem; /* 24.375rem'den daha küçük bir değer kullanılabilir */
+    background: white;
+    padding: 0 0.5rem; /* "pad" yerine "padding" yazılmıştır */
+    line-height: 1.563rem;
+}
+
+.product img{
+    display: flex;
+    max-width: 100%; /* resimlerin maksimum genişliği 100% olarak ayarlanır */
+    height: 25rem;
+    border-bottom: 1px dashed rgba(0,0,0,0.4);
+    object-fit: scale-down;
+}
+
+.sepeteekle{
+    position: absolute;
+    padding: 0.5rem 0.5rem;
+    background: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.sepeteekle:hover{
+    background: rgb(12, 194, 30);
+}
+
